@@ -24,11 +24,12 @@ class Cadastro:
     def get_email(self):
         return self._email
 
-
-
+'''
+TESTE
 c = Cadastro("João", "17 anos", "Joao@gmail.com")
 
 
 print(f"Nome: {c.get_nome()}")
 print(f"Idade: {c.get_idade()}")
 print(f"Email: {c.get_email()}")
+'''
