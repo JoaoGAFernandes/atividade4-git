@@ -23,6 +23,8 @@ class Cadastro:
 
     def get_email(self):
         return self._email
+    def mostrar(self):
+        print(f"Nome: {self.get_nome()}, Idade: {self.get_idade()}, Email: {self.get_email()}")
 
 '''
 TESTE
