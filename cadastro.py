@@ -27,11 +27,6 @@ class Cadastro:
         print(f"Nome: {self.get_nome()}, Idade: {self.get_idade()}, Email: {self.get_email()}")
 
 '''
-TESTE
-c = Cadastro("João", "17 anos", "Joao@gmail.com")
-
-
-print(f"Nome: {c.get_nome()}")
-print(f"Idade: {c.get_idade()}")
-print(f"Email: {c.get_email()}")
+c = Cadastro("Joao", 17, "Joao@gmail.com",)
+c.mostrar()
 '''
