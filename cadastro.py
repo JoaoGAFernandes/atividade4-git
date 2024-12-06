@@ -1,45 +1,34 @@
-from abc import ABC, abstractmethod
 
-class Cadastro(ABC):
+
+class Cadastro:
     def __init__(self, nome, idade, email):
-        self.__nome = nome
-        self.__idade = idade
-        self.__email = email
+        self._nome = nome
+        self._idade = idade
+        self._email = email
 
-    @abstractmethod
     def set_nome(self, nome):
-        pass
+        self._nome=nome
 
     def set_idade(self, idade):
-        self.__idade = idade
+        self._idade = idade
 
     def set_email(self, email):
-        self.__email = email
+        self._email = email
 
     def get_nome(self):
-        return self.__nome
+        return self._nome
 
     def get_idade(self):
-        return self.__idade
+        return self._idade
 
     def get_email(self):
-        return self.__email
-
-class Pessoa(Cadastro):
-    def set_nome(self, nome):
-        self.__nome = nome
-        
-'''    
-TESTANDO
-
-p = Pessoa("João", "17 anos", "Joao@gmail.com")
-
-
-print(f"Nome: {p.get_nome()}")
-print(f"Idade: {p.get_idade()}")
-print(f"Email: {p.get_email()}")
-'''
+        return self._email
 
 
 
+c = Cadastro("João", "17 anos", "Joao@gmail.com")
 
+
+print(f"Nome: {c.get_nome()}")
+print(f"Idade: {c.get_idade()}")
+print(f"Email: {c.get_email()}")
