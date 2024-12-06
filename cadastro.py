@@ -1,5 +1,3 @@
-
-
 class Cadastro:
     def __init__(self, nome, idade, email):
         self._nome = nome
@@ -23,8 +21,10 @@ class Cadastro:
 
     def get_email(self):
         return self._email
+    
     def mostrar(self):
-        print(f"Nome: {self.get_nome()}, Idade: {self.get_idade()}, Email: {self.get_email()}")
+        return f"Nome: {self.get_nome()}, Idade: {self.get_idade()}, Email: {self.get_email()}"
+
 
 '''
 c = Cadastro("Joao", 17, "Joao@gmail.com",)
